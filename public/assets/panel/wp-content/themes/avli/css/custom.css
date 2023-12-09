@@ -1,0 +1,26 @@
+.buttons-holder a,
+.full-menu h2.show-full a {
+    font-family: yekan !important;
+    letter-spacing: normal;
+}
+
+html,
+body {
+    font-family: yekan !important;
+}
+
+.img-holder {
+    object-fit: contain;
+    background-size: 80%;
+    background-position: center;
+    float: right;
+    background-repeat: no-repeat;
+}
+
+.header-item-container {
+    float: right;
+}
+
+.inner-item {
+    /* border-bottom: none; */
+}
