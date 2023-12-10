@@ -42,13 +42,15 @@ class CategoryController extends Controller
     public function update(Request $request, Category $category)
     {
         $request->validate([
-            'title' => 'required|string',
-            'image' => 'image|nullable',
-            'slug'  => "nullable|unique:categories,slug,$category->id",
+            'title'     => 'required|string',
+            'title_two' => 'nullable|string',
+            'image'     => 'image|nullable',
+            'slug'      => "nullable|unique:categories,slug,$category->id",
         ]);
 
         $category->update([
             'title'       => $request->title,
+            'title_two'   => $request->title_two,
             'slug'        => $request->slug ?: $request->title,
             'description' => $request->description,
             'published'   => $request->has('published'),

@@ -21,6 +21,11 @@ class Category extends Model
         ];
     }
 
+    public function foods()
+    {
+        return $this->hasMany(Food::class);
+    }
+
     public function getRouteKeyName()
     {
         return 'slug';

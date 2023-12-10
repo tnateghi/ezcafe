@@ -28,7 +28,7 @@ class FoodController extends Controller
 
     public function create()
     {
-        $categories = Category::orderBy('title')->get();
+        $categories = Category::orderBy('ordering')->get();
 
         return view('admin.foods.create', compact('categories'));
     }
@@ -58,7 +58,7 @@ class FoodController extends Controller
 
     public function edit(Food $food)
     {
-        $categories = Category::orderBy('title')->get();
+        $categories = Category::orderBy('ordering')->get();
 
         return view('admin.foods.edit', compact('food', 'categories'));
     }

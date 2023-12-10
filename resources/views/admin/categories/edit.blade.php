@@ -8,6 +8,12 @@
     </div>
     <div class="col-md-12">
         <div class="mb-4">
+            <label class="form-label">عنوان دوم </label>
+            <input type="text" name="title_two" class="form-control" value="{{ $category->title_two }}">
+        </div>
+    </div>
+    {{-- <div class="col-md-12">
+        <div class="mb-4">
             <label class="form-label" for="example-file-input">تصویر <small>(1280X800)</small></label>
             <input class="form-control" type="file" accept="image/*" name="image">
 
@@ -17,7 +23,7 @@
                 </div>
             @endif
         </div>
-    </div>
+    </div> --}}
 
     <div class="col-md-12 mb-4">
         <div class="space-y-2">

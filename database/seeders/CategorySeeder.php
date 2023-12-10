@@ -13,10 +13,20 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        Category::create([
-            'title'     => 'پیتزا',
-            'slug'      => 'پیتزا',
-            'published' => true
-        ]);
+        $categories = [
+            'پيتزا',
+            'پاستا',
+            'برگر',
+            'ساندویچ',
+            'سوخاری',
+        ];
+
+        foreach ($categories as $category) {
+            Category::create([
+                'title'     => $category,
+                'slug'      => $category,
+                'published' => true
+            ]);
+        }
     }
 }
