@@ -5,22 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('assets/panel/wp-content/themes/avli/img/apple-icon-57x57.png')}}">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('assets/panel/wp-content/themes/avli/img/apple-icon-60x60.png')}}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('assets/panel/wp-content/themes/avli/img/apple-icon-72x72.png')}}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/panel/wp-content/themes/avli/img/apple-icon-76x76.png')}}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('assets/panel/wp-content/themes/avli/img/apple-icon-114x114.png')}}">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('assets/panel/wp-content/themes/avli/img/apple-icon-120x120.png')}}">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('assets/panel/wp-content/themes/avli/img/apple-icon-144x144.png')}}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('assets/panel/wp-content/themes/avli/img/apple-icon-152x152.png')}}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/panel/wp-content/themes/avli/img/apple-icon-180x180.png')}}">
-    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('assets/panel/wp-content/themes/avli/img/android-icon-192x192.png')}}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/panel/wp-content/themes/avli/img/favicon-32x32.png')}}">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('assets/panel/wp-content/themes/avli/img/favicon-96x96.png')}}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/panel/wp-content/themes/avli/img/favicon-16x16.png')}}">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('assets/panel/wp-content/themes/avli/img/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('assets/panel/wp-content/themes/avli/img/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('assets/panel/wp-content/themes/avli/img/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/panel/wp-content/themes/avli/img/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('assets/panel/wp-content/themes/avli/img/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('assets/panel/wp-content/themes/avli/img/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('assets/panel/wp-content/themes/avli/img/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('assets/panel/wp-content/themes/avli/img/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/panel/wp-content/themes/avli/img/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('assets/panel/wp-content/themes/avli/img/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/panel/wp-content/themes/avli/img/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('assets/panel/wp-content/themes/avli/img/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/panel/wp-content/themes/avli/img/favicon-16x16.png') }}">
 
     <meta name="theme-color" content="#ffffff">
-    <title>ezcafe</title>
+    <title>{{ option('site_title') }}</title>
     <link rel="stylesheet" href="{{ asset('assets/panel/wp-content/cache/min/1/7dab38e1c3a5a07d275493b7f4d9e6b2.css') }}" media="all" data-minify="1" />
     <link rel="stylesheet" href="{{ asset('assets/panel/wp-content/themes/avli/css/custom.css') }}" />
     <meta name='robots' content='max-image-preview:large' />
@@ -309,22 +309,27 @@
 
 <body data-rsssl=1 class="rtl home page-template page-template-home page-template-home-php page page-id-17">
     <div class="header">
-        <div class="gotohome"> <a href="#"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAFLAQAAAAARlm9kAAAAAnRSTlMAAHaTzTgAAAAhSURBVGje7cExAQAAAMKg9U9tCj+gAAAAAAAAAAAAAOBiKqsAASWVlAgAAAAASUVORK5CYII=" alt="home icon" data-src="{{ asset('assets/panel/wp-content/themes/avli/img/home.png') }}" decoding="async" class="lazyload" data-eio-rwidth="256" data-eio-rheight="331"> <noscript><img src="/wp-content/themes/avli/img/home.png" alt="home icon" data-eio="l"></noscript> </a> </div>
-        <div class="logo-holder"> <a href="/"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAxYAAAGgAQAAAAAfycxLAAAAAnRSTlMAAHaTzTgAAAA/SURBVHja7cExAQAAAMKg9U9tCF+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgMooAAAUhJiTEAAAAASUVORK5CYII=" alt="eataliano logo" data-src="{{ asset('assets/panel/wp-content/themes/avli/img/logo.png') }}" decoding="async" class="lazyload" data-eio-rwidth="790" data-eio-rheight="416"> <noscript><img src="/wp-content/themes/avli/img/logo.png" alt="eataliano logo" data-eio="l"></noscript> </a>
+        <div class="gotohome"> <a href="#"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAFLAQAAAAARlm9kAAAAAnRSTlMAAHaTzTgAAAAhSURBVGje7cExAQAAAMKg9U9tCj+gAAAAAAAAAAAAAOBiKqsAASWVlAgAAAAASUVORK5CYII=" alt="home icon" data-src="{{ asset('assets/panel/wp-content/themes/avli/img/home.png') }}" decoding="async" class="lazyload" data-eio-rwidth="256" data-eio-rheight="331"> </a> </div>
+        <div class="logo-holder"> <a href="/"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAxYAAAGgAQAAAAAfycxLAAAAAnRSTlMAAHaTzTgAAAA/SURBVHja7cExAQAAAMKg9U9tCF+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgMooAAAUhJiTEAAAAASUVORK5CYII=" alt="eataliano logo" data-src="{{ asset(option('logo_image')) }}" decoding="async" class="lazyload" data-eio-rwidth="790" data-eio-rheight="416"> </a>
         </div>
         <div class="main-page">
             <div class="container">
-                <div class="logo-holder-main"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAxYAAAIMAQAAAABA/wdDAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cGBAAAAAMOg+VOf4AZVAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzwDMsAABA/x1BgAAAABJRU5ErkJggg==" alt="italiano logo" data-src="{{ asset('assets/panel/wp-content/themes/avli/img/main-logo.png') }}" decoding="async" class="lazyload" data-eio-rwidth="790" data-eio-rheight="524"> <noscript><img src="/wp-content/themes/avli/img/main-logo.png" alt="italiano logo" data-eio="l"></noscript>
+                <div class="logo-holder-main"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAxYAAAIMAQAAAABA/wdDAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cGBAAAAAMOg+VOf4AZVAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzwDMsAABA/x1BgAAAABJRU5ErkJggg==" alt="italiano logo" data-src="{{ asset(option('logo_image')) }}" decoding="async" class="lazyload" data-eio-rwidth="790" data-eio-rheight="524">
                 </div>
                 <div class="buttons-holder">
-                    <p>با سپاس از همکاری شما در ساعات پربازدید،</br> مدت زمان استفاده از هر میز یک ساعت و نیم می باشد.
-                    </p> <a id="gotomenu" href="#">منو</a> <a id="showork" href="#">ساعات کاری</a> <a id="showabout" href="#">درباره ما</a> <a id="contact" href="tel:+982126372792">تماس</a>
+                    <p>
+                        {!! nl2br(option('home_text')) !!}
+                    </p>
+                    <a id="gotomenu" href="#">منو</a>
+                    <a id="showork" href="#">ساعات کاری</a>
+                    <a id="showabout" href="#">درباره ما</a>
+                    <a id="contact" href="{{ option('contact_link') }}">تماس</a>
                 </div>
             </div>
         </div>
         <div class="menu-holder">
             <!-- Swiper -->
-            <div class="menu-h swiper-container"  dir="rtl">
+            <div class="menu-h swiper-container" dir="rtl">
                 <div class="swiper-wrapper">
                     @foreach ($categories as $category)
                         <div data-item="cat-{{ $category->id }}" class="swiper-slide cat-{{ $category->id }}">
@@ -368,13 +373,21 @@
                         @foreach ($category->foods()->published()->latest()->get() as $food)
                             <div class="inner-menu col-md-6 col-sm-6 col-sm-12 col-xs-12">
                                 <div class="inner-item">
-                                    <div class="img-holder lazyload" data-back="{{ asset('assets/panel/wp-content/uploads/no.jpg') }}"></div>
-                                    <h4>{{ $food->title }} @if($food->title_two) <small>({{ $food->title_two }})</small> @endif</h4>
+                                    <div class="img-holder lazyload" data-back="{{ $food->imageUrl() }}"></div>
+                                    <h4>{{ $food->title }}
+                                        @if ($food->title_two)
+                                            <small>({{ $food->title_two }})</small>
+                                        @endif
+                                    </h4>
                                     <p>{{ nl2br($food->content) }}</p>
                                     <h5> <span class="price-item"> {{ number_format($food->price) }} <small> t </small> </span> </h5>
                                     <div class="description">
-                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABDgAAALQAQMAAABPGVIZAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAAHZJREFUeNrtwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBcDfo8AAdwjm2gAAAAASUVORK5CYII=" data-src="{{ asset('assets/panel/wp-content/uploads/no.jpg') }}" decoding="async" class="lazyload" data-eio-rwidth="1080" data-eio-rheight="720">
-                                        <h4>{{ $food->title }} @if($food->title_two) <small>({{ $food->title_two }})</small> @endif</h4>
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABDgAAALQAQMAAABPGVIZAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAAHZJREFUeNrtwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBcDfo8AAdwjm2gAAAAASUVORK5CYII=" data-src="{{ $food->imageUrl() }}" decoding="async" class="lazyload" data-eio-rwidth="1080" data-eio-rheight="720">
+                                        <h4>{{ $food->title }}
+                                            @if ($food->title_two)
+                                                <small>({{ $food->title_two }})</small>
+                                            @endif
+                                        </h4>
                                         <span class="price-item"> {{ number_format($food->price) }} <small> t </small></span>
                                     </div>
                                 </div>
@@ -388,26 +401,24 @@
     <div class="overlay"></div>
     <div class="working">
         <div class="container">
-            <div class="working-clock"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEAAQAAAAB0CZXLAAAAAnRSTlMAAHaTzTgAAAAfSURBVGje7cEBDQAAAMKg909tDjegAAAAAAAAAAC+DSEAAAF/GZynAAAAAElFTkSuQmCC" alt="working hours" data-src="/wp-content/themes/avli/img/clock.png" decoding="async" class="lazyload" data-eio-rwidth="256" data-eio-rheight="256"> <noscript><img src="/wp-content/themes/avli/img/clock.png" alt="working hours" data-eio="l"></noscript>
-                <h2>Saturdays to Fridays</h2> <span> Working hours: <b>12-23</b></br> Lunch time: <b>13-16</b></br> Tea
-                    time: <b>16-19</b></br> Dinner time: <b>19-23</b> </span>
+            <div class="working-clock"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEAAQAAAAB0CZXLAAAAAnRSTlMAAHaTzTgAAAAfSURBVGje7cEBDQAAAMKg909tDjegAAAAAAAAAAC+DSEAAAF/GZynAAAAAElFTkSuQmCC" alt="working hours" data-src="{{ asset('assets/panel/wp-content/themes/avli/img/clock.png') }}" decoding="async" class="lazyload" data-eio-rwidth="256" data-eio-rheight="256"> <noscript><img src="/wp-content/themes/avli/img/clock.png" alt="working hours" data-eio="l"></noscript>
+                <h2>Saturdays to Fridays</h2>
+                <span>
+                    Working hours: <b>12-23</b><br>
+                    Lunch time: <b>13-16</b><br>
+                    Tea time: <b>16-19</b><br>
+                    Dinner time: <b>19-23</b>
+                </span>
             </div>
             <div class="buttons-holder"> <a id="workout" href="#">BACK TO HOME</a> </div>
         </div>
     </div>
     <div class="about">
         <div class="container">
-            <div class="about-inner"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAxYAAAGgAQAAAAAfycxLAAAAAnRSTlMAAHaTzTgAAAA/SURBVHja7cExAQAAAMKg9U9tCF+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgMooAAAUhJiTEAAAAASUVORK5CYII=" alt="logo eM cafe" data-src="/wp-content/themes/avli/img/logo.png" decoding="async" class="lazyload" data-eio-rwidth="790" data-eio-rheight="416"> <noscript><img src="/wp-content/themes/avli/img/logo.png" alt="logo eM cafe" data-eio="l"></noscript>
-                <p> ایده‌ی اصلی بر این اساس شروع شد که اینجا کافه‌ای محلی یا به بیانی دیگر یک (کافه‌ همسایه) باشد.
-                    انتظار بر این است که میهمانان بدون آمادگی قبلی و فکر کردن به ظاهر خود بتوانند از حضور در اِم کافه
-                    لذت ببرد. کافه‌ا‌ی که با برخورداری از محیطی گرم و صمیمی حتی مناسب گذران ساعات و دیدارهای کاری هم
-                    باشد. با این قصد که تمام ساکنین محله دوستان ا‌م‌کافه هستند. اما تمام ماجرا به همینجا ختم نشد، بیشتر
-                    و بیشتر خلق شد، انگار که این مسیر از هر کدام از ما توقع‌های بیشتری داشت، مایی که نظر‌هایمان،
-                    خواسته‌هایمان و اخلاق‌هایمان متفاوت بود، ولی در کنار یکدیگر معناهای جدیدی را خلق میکردیم آرکتایپ
-                    چیست؟ نمادی جهانی درک شده در مورد رفتار‌هاست. که انسانها بر اساس آن دسته‌بندی میشوند، این آرکتایپ‌ها
-                    عمدتاً در داستان‌سرایی‌های فرهنگ‌های مختلف به وفور دیده میشوند. ام‌کافه محل همنشینی آرکتایپ‌های
-                    مختلف است. یک قهرمان در کنار یک عاشق، چای مینوشد. یک خلاق، سر میز یک عاقل و یک اطواری نشسته است.
-                    منتظرت هستیم تا تو هم داستان منحصر به فرد خودت را اینجا بنویسی </p>
+            <div class="about-inner"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAxYAAAGgAQAAAAAfycxLAAAAAnRSTlMAAHaTzTgAAAA/SURBVHja7cExAQAAAMKg9U9tCF+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgMooAAAUhJiTEAAAAASUVORK5CYII=" alt="logo eM cafe" data-src="{{ asset('assets/panel/wp-content/themes/avli/img/logo.png') }}" decoding="async" class="lazyload" data-eio-rwidth="790" data-eio-rheight="416"> <noscript><img src="/wp-content/themes/avli/img/logo.png" alt="logo eM cafe" data-eio="l"></noscript>
+                <p>
+                    {!! nl2br(option('about_text')) !!}
+                </p>
             </div>
             <div class="buttons-holder"> <a id="aboutout" href="#">BACK TO HOME</a> </div>
         </div>

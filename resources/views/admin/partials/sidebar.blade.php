@@ -84,12 +84,12 @@
                     </a>
                 </li> --}}
 
-                {{-- <li class="nav-main-item">
+                <li class="nav-main-item">
                     <a class="nav-main-link {{ active_class('admin.settings') }}" href="{{ route('admin.settings') }}">
                         <i class="nav-main-link-icon fa fa-cog"></i>
                         <span class="nav-main-link-name">تنظیمات</span>
                     </a>
-                </li> --}}
+                </li>
                 <li class="nav-main-heading">دیگر</li>
 
                 <li class="nav-main-item {{ open_class(['admin.admins.*']) }}">

@@ -14,33 +14,44 @@
                         <h2 class="content-heading pt-0">
                             <i class="fa fa-fw fa-comments text-muted me-1"></i> تنظیمات
                         </h2>
-                        <div class="row push">
-
-                            <div class="col-lg-4">
-                                <p class="text-muted">
-                                    اطلاعات پنل پیامکی نیاز پرداز را در این قسمت وارد کنید.
-                                </p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="mb-4">
+                                    <label class="form-label" for="home_text">متن صفحه اصلی</label>
+                                    <textarea class="form-control" name="home_text" id="home_text" rows="3">{{ option('home_text') }}</textarea>
+                                </div>
                             </div>
-                            <div class="col-lg-8 col-xl-5">
+                            <div class="col-lg-6">
                                 <div class="mb-4">
-                                    <label class="form-label" for="smspanel_username">نام کاربری</label>
-                                    <input type="text" class="form-control ltr" id="smspanel_username" name="smspanel_username" value="{{ option('smspanel_username') }}">
+                                    <label class="form-label" for="about_text">متن درباره ما</label>
+                                    <textarea class="form-control" name="about_text" id="about_text" rows="3">{{ option('about_text') }}</textarea>
                                 </div>
+                            </div>
+                            <div class="col-lg-6">
                                 <div class="mb-4">
-                                    <label class="form-label" for="smspanel_password">رمز</label>
-                                    <input type="text" class="form-control ltr" id="smspanel_password" name="smspanel_password" value="{{ option('smspanel_password') }}">
+                                    <label class="form-label" for="site_title">عنوان سایت</label>
+                                    <input class="form-control" name="site_title" id="site_title" value="{{ option('site_title') }}">
                                 </div>
+                            </div>
+                            <div class="col-lg-6">
                                 <div class="mb-4">
-                                    <label class="form-label" for="smspanel_fromnumber">شماره ارسالی</label>
-                                    <input type="text" class="form-control ltr" id="smspanel_fromnumber" name="smspanel_fromnumber" value="{{ option('smspanel_fromnumber', '10009611') }}">
+                                    <label class="form-label" for="contact_link">لینک تماس</label>
+                                    <input class="form-control" name="contact_link" id="contact_link" value="{{ option('contact_link') }}">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="mb-4">
+                                    <label class="form-label" for="logo_image">تصویر لوگو</label>
+                                    <input type="file" accept="image/*" class="form-control" name="logo_image" id="logo_image">
                                 </div>
                             </div>
                         </div>
 
-
                         <!-- Submit -->
                         <div class="row push">
-                            <div class="col-lg-8 col-xl-5 offset-lg-4">
+                            <div class="col-lg-8 col-xl-5">
                                 <div class="mb-4">
                                     <button type="submit" class="btn btn-alt-primary">
                                         ذخیره تنظیمات

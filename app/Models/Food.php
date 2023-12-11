@@ -52,6 +52,6 @@ class Food extends Model
 
     public function imageUrl()
     {
-        return $this->image ? asset($this->image) : asset('assets/panel/img/no-image.png');
+        return $this->image ? asset($this->image) : asset('assets/panel/wp-content/uploads/no.jpg');
     }
 }

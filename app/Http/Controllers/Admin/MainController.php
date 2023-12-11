@@ -22,12 +22,25 @@ class MainController extends Controller
     public function updateSettings(Request $request)
     {
         $settings = $request->only([
-            'smspanel_username',
-            'smspanel_password',
-            'smspanel_fromnumber',
-            'referral_enabled',
-            'referral_credit_amount',
+            'home_text',
+            'about_text',
+            'contact_link',
+            'site_title',
         ]);
+
+        $images = $request->only([
+            'logo_image',
+        ]);
+
+        foreach ($images as $key => $img) {
+            if ($request->hasFile($key)) {
+                $image = $request->file($key);
+                $name = uniqid() . '_' . '.' . $image->getClientOriginalExtension();
+                $image->storeAs('uploads', $name, 'public');
+
+                option_update($key, 'uploads/' . $name);
+            }
+        }
 
         foreach ($settings as $setting => $value) {
             option_update($setting, $value);
