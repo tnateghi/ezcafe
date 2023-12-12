@@ -352,7 +352,7 @@
                         <div class="header-item {{ $loop->first ? 'active' : '' }}">
                             <a href="#cat-{{ $category->id }}">
                                 <img src="#" alt="menew" class="header-item-image">
-                                <div class="item-title">پيتزا</div>
+                                <div class="item-title">{{ $category->title }}</div>
                             </a>
                         </div>
                     </div>
