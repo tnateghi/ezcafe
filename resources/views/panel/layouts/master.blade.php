@@ -371,7 +371,7 @@
                         </div>
 
                         @foreach ($category->foods()->published()->latest()->get() as $food)
-                            <div class="inner-menu col-md-6 col-sm-6 col-sm-12 col-xs-12">
+                            <div class="{{ $food->instock ? '' : 'done' }} inner-menu col-md-6 col-sm-6 col-sm-12 col-xs-12">
                                 <div class="inner-item">
                                     <div class="img-holder lazyload" data-back="{{ $food->imageUrl() }}"></div>
                                     <h4>{{ $food->title }}
