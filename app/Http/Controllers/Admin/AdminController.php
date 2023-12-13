@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Admin;
-use App\Rules\CheckMobileNumber;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -27,7 +26,7 @@ class AdminController extends Controller
         $data = $request->validate([
             'name'     => 'required|string',
             'username' => 'required|string|unique:admins,username',
-            'mobile'   => ['required', 'unique:admins,mobile', new CheckMobileNumber()],
+            'mobile'   => ['required', 'unique:admins,mobile'],
             'password' => 'required|string|min:6|confirmed'
         ]);
 
@@ -52,7 +51,7 @@ class AdminController extends Controller
         $data = $request->validate([
             'name'     => 'required|string',
             'username' => 'required|string|unique:admins,username,' . $admin->id,
-            'mobile'   => ['required', 'unique:admins,mobile,' . $admin->id, new CheckMobileNumber()],
+            'mobile'   => ['required', 'unique:admins,mobile,' . $admin->id],
         ]);
 
         if ($request->password) {

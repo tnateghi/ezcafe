@@ -14,8 +14,8 @@ class FoodController extends Controller
     {
         $foods = Food::filter()->latest()->paginate(20);
 
-        $draft_foods     = Food::draft()->count();
-        $published_foods = Food::published()->count();
+        $draft_foods     = Food::where('instock', false)->count();
+        $published_foods = Food::where('instock', true)->count();
         $all_foods       = Food::count();
 
         return view('admin.foods.index', compact(
