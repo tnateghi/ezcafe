@@ -28,7 +28,7 @@
                                     <div class="col-md-6">
                                         <div class="mb-4">
                                             <label class="form-label" for="title_two">عنوان دوم</label>
-                                            <input type="text" class="form-control" id="title_two" name="title_two" value="{{ $food->title_two }}" required>
+                                            <input type="text" class="form-control" id="title_two" name="title_two" value="{{ $food->title_two }}">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
