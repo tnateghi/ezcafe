@@ -112,7 +112,12 @@
                                             <img src="{{ $food->imageUrl() }}" alt="image" style="width: 100px">
                                         </td>
                                         <td class="fs-sm">
-                                            <strong>{{ $food->title }}</strong>
+                                            <strong>
+                                                {{ $food->title }}
+                                                @if ($food->title_two)
+                                                    <small>({{ $food->title_two }})</small>
+                                                @endif
+                                            </strong>
                                         </td>
                                         <td class="fs-sm">
                                             <strong>{{ $food->category->title }}</strong>
