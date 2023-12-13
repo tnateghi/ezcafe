@@ -71,10 +71,9 @@
                                 <select name="category_id" id="category_id" class="form-select">
                                     <option value="">همه</option>
                                     @foreach ($categories as $category)
-                                        <option value="{{ $category->id }}">{{ $category->title }}</option>
+                                        <option value="{{ $category->id }}" {{ request()->category_id == $category->id ? 'selected' : '' }}>{{ $category->title }}</option>
                                     @endforeach
                                 </select>
-                                <input type="text" class="form-control" name="category_id" value="{{ request()->category_id }}">
                             </div>
                         </div>
                         <div class="row mb-4">
