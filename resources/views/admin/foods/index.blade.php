@@ -66,6 +66,16 @@
                                 <label class="form-label" for="title">عنوان</label>
                                 <input type="text" class="form-control" name="title" value="{{ request()->title }}">
                             </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="category_id">دسته بندی</label>
+                                <select name="category_id" id="category_id" class="form-select">
+                                    <option value="">همه</option>
+                                    @foreach ($categories as $category)
+                                        <option value="{{ $category->id }}">{{ $category->title }}</option>
+                                    @endforeach
+                                </select>
+                                <input type="text" class="form-control" name="category_id" value="{{ request()->category_id }}">
+                            </div>
                         </div>
                         <div class="row mb-4">
                             <div class="col-12">

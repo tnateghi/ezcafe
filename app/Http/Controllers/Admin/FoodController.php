@@ -14,6 +14,7 @@ class FoodController extends Controller
     {
         $foods = Food::filter()->latest()->paginate(20);
 
+        $categories      = Category::orderBy('ordering')->get();
         $draft_foods     = Food::where('instock', false)->count();
         $published_foods = Food::where('instock', true)->count();
         $all_foods       = Food::count();
@@ -23,6 +24,7 @@ class FoodController extends Controller
             'draft_foods',
             'published_foods',
             'all_foods',
+            'categories',
         ));
     }
 
