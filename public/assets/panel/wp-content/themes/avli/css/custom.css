@@ -24,3 +24,29 @@ body {
 .inner-item {
     /* border-bottom: none; */
 }
+
+#gotomenu {
+    background: #68817e;
+}
+
+.buttons-holder a:hover {
+    background-color: #68817e;
+}
+
+.buttons-holder a {
+    border: 2px solid #68817e;
+    text-decoration: none;
+    color: #68817e;
+}
+
+.full-menu h2.show-full a {
+    background: #68817e;
+}
+
+.working-clock {
+    color: #68817e;
+}
+
+.each-cat::after {
+    background: #68817e;
+}

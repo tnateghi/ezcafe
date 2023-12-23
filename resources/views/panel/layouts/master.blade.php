@@ -22,7 +22,7 @@
     <meta name="theme-color" content="#ffffff">
     <title>{{ option('site_title') }}</title>
     <link rel="stylesheet" href="{{ asset('assets/panel/wp-content/cache/min/1/7dab38e1c3a5a07d275493b7f4d9e6b2.css') }}" media="all" data-minify="1" />
-    <link rel="stylesheet" href="{{ asset('assets/panel/wp-content/themes/avli/css/custom.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/panel/wp-content/themes/avli/css/custom.css') }}?v={{ time() }}" />
     <meta name='robots' content='max-image-preview:large' />
     <link rel='dns-prefetch' href='http://s.w.org/' />
 
@@ -401,7 +401,7 @@
     <div class="overlay"></div>
     <div class="working">
         <div class="container">
-            <div class="working-clock"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEAAQAAAAB0CZXLAAAAAnRSTlMAAHaTzTgAAAAfSURBVGje7cEBDQAAAMKg909tDjegAAAAAAAAAAC+DSEAAAF/GZynAAAAAElFTkSuQmCC" alt="working hours" data-src="{{ asset('assets/panel/wp-content/themes/avli/img/clock.png') }}" decoding="async" class="lazyload" data-eio-rwidth="256" data-eio-rheight="256"> <noscript><img src="/wp-content/themes/avli/img/clock.png" alt="working hours" data-eio="l"></noscript>
+            <div class="working-clock"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEAAQAAAAB0CZXLAAAAAnRSTlMAAHaTzTgAAAAfSURBVGje7cEBDQAAAMKg909tDjegAAAAAAAAAAC+DSEAAAF/GZynAAAAAElFTkSuQmCC" alt="working hours" data-src="{{ asset('assets/panel/wp-content/themes/avli/img/clock.png') }}?v=2" decoding="async" class="lazyload" data-eio-rwidth="256" data-eio-rheight="256"> <noscript><img src="/wp-content/themes/avli/img/clock.png" alt="working hours" data-eio="l"></noscript>
                 <h2>Saturdays to Fridays</h2>
                 <span>
                     Working hours: <b>12-23</b><br>
