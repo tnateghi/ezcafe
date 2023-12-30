@@ -26,6 +26,10 @@ class Food extends Model
             $query->search($request->title);
         }
 
+        if ($request->instock !== null) {
+            $query->where('instock', $request->instock);
+        }
+
         if ($request->category_id) {
             $query->where('category_id', $request->category_id);
         }

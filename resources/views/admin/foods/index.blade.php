@@ -62,17 +62,26 @@
                     <!-- Search Form -->
                     <form action="" method="GET">
                         <div class="row mb-4">
-                            <div class="col-md-6">
+                            <div class="col-md-4 mb-3">
                                 <label class="form-label" for="title">عنوان</label>
                                 <input type="text" class="form-control" name="title" value="{{ request()->title }}">
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4 mb-3">
                                 <label class="form-label" for="category_id">دسته بندی</label>
                                 <select name="category_id" id="category_id" class="form-select">
                                     <option value="">همه</option>
                                     @foreach ($categories as $category)
                                         <option value="{{ $category->id }}" {{ request()->category_id == $category->id ? 'selected' : '' }}>{{ $category->title }}</option>
                                     @endforeach
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label" for="instock">وضعیت موجودی</label>
+                                <select name="instock" id="instock" class="form-select">
+                                    <option value="">همه</option>
+                                    <option value="1" {{ request()->instock === '1' ? 'selected' : '' }}>موجود</option>
+                                    <option value="0" {{ request()->instock === '0' ? 'selected' : '' }}>ناموجود</option>
+
                                 </select>
                             </div>
                         </div>
@@ -99,6 +108,7 @@
                                     <th>عنوان</th>
                                     <th>دسته بندی</th>
                                     <th>وضعیت</th>
+                                    <th>موجودی</th>
                                     <th class="text-center">عملیات</th>
                                 </tr>
                             </thead>
@@ -128,6 +138,13 @@
                                                 <span class="badge bg-success">منتشر شده</span>
                                             @else
                                                 <span class="badge bg-danger">پیش نویس</span>
+                                            @endif
+                                        </td>
+                                        <td>
+                                            @if ($food->instock)
+                                                <span class="badge bg-success">موجود</span>
+                                            @else
+                                                <span class="badge bg-danger">ناموجود</span>
                                             @endif
                                         </td>
                                         <td class="text-center fs-sm">
